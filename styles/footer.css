@@ -1,0 +1,105 @@
+:root {
+  --row-gap: 20px;
+}
+
+.footer {
+  background: var(--backgroung-gradient);
+  color: #fff;
+}
+
+.footer_logo {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.footer_wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 42px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_aside {
+  padding: 0 0 20px;
+}
+
+.footer_nav-container {
+  margin: 0 74px 0 196px;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+.footer_nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_nav-item {
+  margin-bottom: var(--desktop-gap);
+}
+
+.item-title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  position: relative;
+  margin-top: 0;
+}
+
+.item-title::after {
+  content: '';
+  border: #fff solid 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: calc(50% - 4px);
+  right: -19px;
+}
+
+.sub-nav {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--row-gap);
+  color: #fff;
+  font-weight: 600;
+}
+
+.sub-nav_link:hover {
+  color: #303030;
+}
+
+.link_privetpolite:visited,
+.sub-nav_link:visited {
+  color: #fff;
+}
+
+.link[type='tel'] {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.messengers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: var(--row-gap);
+  margin-bottom: var(--desktop-gap);
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 428px 20px 358px;
+  color: #fff;
+  font-weight: 600;
+}

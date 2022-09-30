@@ -1,0 +1,120 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  max-width: 1920px;
+  margin: auto;
+  padding: var(--desktop-gap);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: #303030;
+}
+
+.header_nav-container {
+  margin: auto;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: var(--desktop-gap);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  height: 34px;
+  color: #343434;
+}
+
+.nav_item {
+  cursor: pointer;
+}
+
+.header_nav-item:hover {
+  color: var(--blue-text-color);
+}
+
+.nav_link {
+  display: inline-block;
+}
+
+.nav_link:visited {
+  color: currentColor;
+}
+
+.nav_link.active, /* строчка для наглядности в тестовом, чтобы не переключать псевдоклассы */
+.nav_link:active,
+.language_btn:active {
+  color: var(--blue-text-color);
+  position: relative;
+  height: 100%;
+}
+
+.active::after,
+.nav_link:active::after {
+  content: '';
+  border: 1px solid var(--blue-text-color);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: var(--blue-text-color);
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  height: 27px;
+  align-self: center;
+}
+
+.language_btn {
+  position: relative;
+  font-weight: 600;
+  color: #979bad;
+  font-size: 16px;
+  height: 100%;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language_btn:hover,
+.language_btn.activeBtn {
+  color: var(--blue-text-color);
+}
+
+.language_btn.activeBtn::after, /* строчка для наглядности в тестовом, чтобы не переключать псевдоклассы */
+.language_btn:active::after {
+  content: '';
+  border: 1px solid var(--blue-text-color);
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: var(--blue-text-color);
+}
+
+.btn.header_start-btn {
+  margin-left: 60px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  align-self: center;
+  height: 100%;
+  color: var(--blue-text-color);
+}

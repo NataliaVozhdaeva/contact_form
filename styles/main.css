@@ -1,0 +1,14 @@
+.aside {
+  width: 179px;
+  height: 179px;
+  margin-right: 179px;
+  display: flex;
+  background-color: bisque;
+}
+
+.aside_btn {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--blue-text-color);
+}
