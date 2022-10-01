@@ -87,6 +87,7 @@
   letter-spacing: 0.02em;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .language_btn:hover,
@@ -117,4 +118,5 @@
   align-self: center;
   height: 100%;
   color: var(--blue-text-color);
+  background-color: #fff;
 }

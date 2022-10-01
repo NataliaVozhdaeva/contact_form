@@ -26,20 +26,14 @@
 }
 
 .footer_nav-container {
-  margin: 0 74px 0 196px;
+  margin: 10px 74px 50px 196px;
   flex-grow: 1;
-  padding-top: 10px;
 }
 
 .footer_nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.footer_nav-item {
-  margin-bottom: var(--desktop-gap);
 }
 
 .item-title {
@@ -73,11 +67,7 @@
   font-weight: 600;
 }
 
-.sub-nav_link:hover {
-  color: #303030;
-}
-
-.link_privetpolite:visited,
+.link_privacypolicy:visited,
 .sub-nav_link:visited {
   color: #fff;
 }
@@ -86,6 +76,11 @@
   color: #fff;
   font-size: 20px;
   line-height: 24px;
+}
+
+.sub-nav_link:hover,
+.link_privacypolicy:hover {
+  color: #303030;
 }
 
 .messengers {

@@ -41,13 +41,70 @@
       <button class="btn header_start-btn">Начать проект</button>
     </header>
 
-    <aside class="aside">
-      <button class="btn aside_btn">
-        <span class="hidden">Предыдущий пункт меню</span>
-      </button>
-    </aside>
+    <main class="main">
+      <aside class="aside">
+        <button class="btn aside_btn">
+          <span class="hidden">Предыдущий пункт меню</span>
+        </button>
+      </aside>
 
-    <main class="main"></main>
+      <form method="post" action="some url" class="main_form" id="contact-form">
+        <fieldset class="form-contact_fildset">
+          <legend>Главная - Контакты</legend>
+          <h1 class="contact-form_title">Мы рядом</h1>
+          <p class="contact-form_subtitle">
+            Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите
+            нам на почту info@site.com
+          </p>
+          <div class="input_wrapper">
+            <label for="name" class="contact-form_label"> Ваше имя </label
+            ><input
+              id="name"
+              type="text"
+              class="contact-form_input contact-form_input__name input"
+              name="name"
+              required
+            />
+          </div>
+          <div class="input_wrapper">
+            <label for="email" class="contact-form_label"> Ваш E-Mail </label>
+            <input
+              id="email"
+              type="text"
+              class="contact-form_input contact-form_input__email input"
+              name="email"
+              required
+            />
+          </div>
+          <div class="input_wrapper textarea_wrapper">
+            <label
+              for="comment"
+              class="contact-form_label contact-form_label__textarea"
+              >Комментарий
+            </label>
+            <textarea
+              id="comment"
+              type="text"
+              class="contact-form_input contact-form_input__comment input"
+              name="comment"
+              required
+            ></textarea>
+          </div>
+          <div class="input_wrapper input_wrapper__checkbox">
+            <label for="contact-form_checkbox" class="contact-form_label">
+              <input
+                id="contact-form_checkbox"
+                type="checkbox"
+                class="contact-form_checkbox"
+              />Согласен с
+              <a class="link link_privacypolicy"
+                >Политикой конфиденциальности</a
+              >
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
 
     <footer class="footer">
       <div class="footer_wrapper">
@@ -127,8 +184,8 @@
       </div>
       <div class="footer_bottom">
         <div class="copyright">© Company 2022. All rights reserved.</div>
-        <a href="" class="link link_privetpolite"
-          >Политика конфиденциальночти</a
+        <a href="" class="link link_privacypolicy"
+          >Политика конфиденциальности</a
         >
       </div>
     </footer>

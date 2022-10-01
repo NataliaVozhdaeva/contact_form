@@ -48,11 +48,16 @@ body {
 .btn {
   border: none;
   padding: 0;
-  background: var(--body-background);
   font-family: 'Gilroy';
   font-style: normal;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0;
 }

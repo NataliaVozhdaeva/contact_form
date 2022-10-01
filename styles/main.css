@@ -1,9 +1,15 @@
+.main {
+  display: flex;
+}
+
 .aside {
   width: 179px;
-  height: 179px;
+  height: auto;
   margin-right: 179px;
   display: flex;
-  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .aside_btn {
@@ -11,4 +17,54 @@
   height: 7px;
   border-radius: 50%;
   background-color: var(--blue-text-color);
+  box-shadow: 12px 0 var(--blue-text-color), -12px 0 var(--blue-text-color);
+}
+
+.form-contact_fildset {
+  border: none;
+  width: 741px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+}
+
+.input_wrapper {
+  width: 278px;
+  position: relative;
+}
+
+/*так как не знаю, поддержка каких браузеров обязательна, не стала стилизовать через :placeholder, так как он пока 
+поддерживается мало где. Сделала через label и немного js*/
+
+.contact-form_label {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.contact-form_label__textarea {
+  top: 0px;
+}
+
+.contact-form_input {
+  height: 40px;
+  width: 100%;
+}
+
+.input_wrapper:first-of-type {
+  flex-grow: 1;
+}
+
+.textarea_wrapper {
+  width: 100%;
+  height: 91px;
+}
+
+.contact-form_input__comment {
+  width: 100%;
+  height: 60px;
 }
