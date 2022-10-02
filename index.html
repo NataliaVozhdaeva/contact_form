@@ -49,60 +49,72 @@
       </aside>
 
       <form method="post" action="some url" class="main_form" id="contact-form">
-        <fieldset class="form-contact_fildset">
-          <legend>Главная - Контакты</legend>
+        <legend class="legend">Главная - <b>Контакты</b></legend>
+        <div class="form-container">
           <h1 class="contact-form_title">Мы рядом</h1>
           <p class="contact-form_subtitle">
             Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите
-            нам на почту info@site.com
+            нам на почту <span class="blue-text">info@site.com</span>
           </p>
-          <div class="input_wrapper">
-            <label for="name" class="contact-form_label"> Ваше имя </label
-            ><input
-              id="name"
-              type="text"
-              class="contact-form_input contact-form_input__name input"
-              name="name"
-              required
-            />
-          </div>
-          <div class="input_wrapper">
-            <label for="email" class="contact-form_label"> Ваш E-Mail </label>
-            <input
-              id="email"
-              type="text"
-              class="contact-form_input contact-form_input__email input"
-              name="email"
-              required
-            />
-          </div>
-          <div class="input_wrapper textarea_wrapper">
-            <label
-              for="comment"
-              class="contact-form_label contact-form_label__textarea"
-              >Комментарий
-            </label>
-            <textarea
-              id="comment"
-              type="text"
-              class="contact-form_input contact-form_input__comment input"
-              name="comment"
-              required
-            ></textarea>
-          </div>
-          <div class="input_wrapper input_wrapper__checkbox">
-            <label for="contact-form_checkbox" class="contact-form_label">
+          <fieldset class="form-contact_fildset">
+            <div class="input_wrapper">
+              <input
+                id="name"
+                type="text"
+                class="contact-form_input contact-form_input__name input"
+                name="name"
+                required
+              />
+              <label for="name" class="contact-form_label"> Ваше имя </label>
+            </div>
+            <div class="input_wrapper">
+              <input
+                id="email"
+                type="text"
+                class="contact-form_input contact-form_input__email input"
+                name="email"
+                required
+              />
+              <label for="email" class="contact-form_label"> Ваш E-Mail </label>
+            </div>
+            <div class="input_wrapper input_wrapper__textarea">
+              <textarea
+                id="comment"
+                type="text"
+                class="contact-form_input contact-form_input__comment input"
+                name="comment"
+                required
+              ></textarea>
+              <label
+                for="comment"
+                class="contact-form_label contact-form_label__textarea"
+                >Комментарий
+              </label>
+            </div>
+            <div class="input_wrapper input_wrapper__checkbox">
               <input
                 id="contact-form_checkbox"
                 type="checkbox"
                 class="contact-form_checkbox"
-              />Согласен с
-              <a class="link link_privacypolicy"
-                >Политикой конфиденциальности</a
+              />
+              <label
+                for="contact-form_checkbox"
+                class="contact-form_label contact-form_label__checkbox"
               >
-            </label>
-          </div>
-        </fieldset>
+                Согласен с&nbsp
+                <a
+                  href=""
+                  class="link contact-form_link__privacypolicy blue-text"
+                >
+                  Политикой конфиденциальности</a
+                >
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" class="btn contact-form_submit-btn">
+          Отправить
+        </button>
       </form>
     </main>
 

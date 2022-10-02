@@ -120,3 +120,7 @@
   color: var(--blue-text-color);
   background-color: #fff;
 }
+
+.btn {
+  border: none;
+}
