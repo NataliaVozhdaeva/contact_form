@@ -1,6 +1,7 @@
 @import './header.css';
 @import './main.css';
 @import './footer.css';
+@import './small-devices.css';
 
 @font-face {
   font-family: 'Gilroy';

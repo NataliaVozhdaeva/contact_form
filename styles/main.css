@@ -1,11 +1,12 @@
 .main {
   display: flex;
+  max-width: 1920px;
 }
 
 .aside {
-  width: 179px;
+  width: 9%;
   height: auto;
-  margin-right: 179px;
+  margin-right: 9%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,7 @@
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
+  box-sizing: content-box;
 }
 
 .legend {
@@ -123,6 +125,7 @@
 .contact-form_label__checkbox {
   font-size: 18px;
   line-height: 27px;
+  font-weight: 400;
   color: black;
   top: 0;
   left: 0;
@@ -167,8 +170,8 @@
 }
 
 .contact-form_submit-btn {
-  width: 222px;
-  height: 222px;
+  width: 217px;
+  height: 217px;
   position: relative;
   margin-bottom: 17px;
   background-color: #fff;
@@ -182,6 +185,7 @@
   row-gap: 29px;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 }
 
 .contact-form_submit-btn::before {
@@ -193,7 +197,7 @@
   bottom: -5px;
   right: -5px;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 
 .contact-form_submit-btn:hover {
@@ -201,7 +205,8 @@
   background-color: var(--blue-text-color);
 }
 
-.contact-form_submit-btn:hover::before {
+.contact-form_submit-btn:hover::before,
+.form-done::before {
   background: var(--blue-text-color);
 }
 
@@ -216,6 +221,11 @@
 
 .contact-form_submit-btn:hover > .sendedMessage {
   animation: fly-away 0.5s linear forwards;
+}
+
+.form-done {
+  color: #fff;
+  background-color: var(--blue-text-color);
 }
 
 @keyframes plane-hover {

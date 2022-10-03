@@ -5,6 +5,7 @@
 .footer {
   background: var(--background-gradient);
   color: #fff;
+  max-width: 1920px;
 }
 
 .footer_logo {
@@ -94,7 +95,9 @@
 .footer_bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0 428px 20px 358px;
+  margin: auto;
+  padding-bottom: 20px;
   color: #fff;
   font-weight: 600;
+  max-width: 1200px;
 }

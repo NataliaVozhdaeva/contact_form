@@ -9,6 +9,7 @@
   padding: var(--desktop-gap);
   display: flex;
   justify-content: space-between;
+  margin-bottom: 97px;
 }
 
 .header_logo {
@@ -108,9 +109,9 @@
   background: var(--blue-text-color);
 }
 
-.btn.header_start-btn {
-  margin-left: 60px;
-  padding-right: 40px;
+.header_start-btn {
+  margin-left: 3%;
+  margin-right: 2%;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 16px;
@@ -119,8 +120,34 @@
   height: 100%;
   color: var(--blue-text-color);
   background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.header_start-btn::before {
+  content: url(../img/icons/arrow.svg);
+  width: 13px;
+  height: auto;
+  position: absolute;
+  right: -25px;
+}
+
+.header_start-btn::after {
+  content: '';
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  right: -38px;
+  top: -21px;
+  border-radius: 50%;
+  border: solid 1px #e2e2e2;
+  z-index: -1;
 }
 
 .btn {
   border: none;
+}
+
+.mobile-menu {
+  display: none;
 }
