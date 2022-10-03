@@ -47,8 +47,8 @@
           <span class="hidden">Предыдущий пункт меню</span>
         </button>
       </aside>
-
-      <form method="post" action="some url" class="main_form" id="contact-form">
+      <!-- method="post" action="some url" -->
+      <form class="main_form" id="contact-form">
         <legend class="legend">Главная - <b>Контакты</b></legend>
         <div class="form-container">
           <h1 class="contact-form_title">Мы рядом</h1>
@@ -63,7 +63,6 @@
                 type="text"
                 class="contact-form_input contact-form_input__name input"
                 name="name"
-                required
               />
               <label for="name" class="contact-form_label"> Ваше имя </label>
             </div>
@@ -73,7 +72,6 @@
                 type="text"
                 class="contact-form_input contact-form_input__email input"
                 name="email"
-                required
               />
               <label for="email" class="contact-form_label"> Ваш E-Mail </label>
             </div>
@@ -83,7 +81,6 @@
                 type="text"
                 class="contact-form_input contact-form_input__comment input"
                 name="comment"
-                required
               ></textarea>
               <label
                 for="comment"
@@ -113,7 +110,14 @@
           </fieldset>
         </div>
         <button type="submit" class="btn contact-form_submit-btn">
-          Отправить
+          <img
+            width="57"
+            height="42"
+            src="./img/icons/air.png"
+            alt="иконка самолета"
+            class="submit-btn_img"
+          />
+          <span class="submit-button_text">Отправить</span>
         </button>
       </form>
     </main>
@@ -176,21 +180,25 @@
           </ul>
         </nav>
         <ul class="messengers list">
-          <li class="messenger_item__whatsapp">
-            <a href="" class="link messenger_link"
-              ><img
-                src=""
-                alt="иконка whatsap"
-                class="messenger_icon__whatsapp"
-            /></a>
-          </li>
-          <li class="messenger_item__telegram">
-            <a href="" class="link messenger_link"
-              ><img
-                src=""
+          <li class="messengers_item messengers_item__telegram">
+            <a href="" class="link messengers_link messengers_link__telegram">
+              <img
                 alt="иконка telegram"
-                class="messenger_icon__telegram"
-            /></a>
+                width="34"
+                height="34"
+                src="./img/icons/tg.svg"
+              />
+            </a>
+          </li>
+          <li class="messengers_item messengers_item__whatsapp">
+            <a href="" class="link messengers_link messengers_link__whatsapp">
+              <img
+                alt="иконка whatsapp"
+                width="34"
+                height="34"
+                src="./img/icons/wa.svg"
+              />
+            </a>
           </li>
         </ul>
       </div>
@@ -202,4 +210,5 @@
       </div>
     </footer>
   </body>
+  <script src="./scripts/main.js"></script>
 </html>

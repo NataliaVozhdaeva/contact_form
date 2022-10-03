@@ -26,7 +26,7 @@
 }
 
 .footer_nav-container {
-  margin: 10px 74px 50px 196px;
+  margin: 10px 74px var(--desktop-gap) 196px;
   flex-grow: 1;
 }
 
@@ -88,7 +88,7 @@
   flex-direction: column;
   justify-content: flex-end;
   row-gap: var(--row-gap);
-  margin-bottom: var(--desktop-gap);
+  margin-bottom: 60px;
 }
 
 .footer_bottom {
