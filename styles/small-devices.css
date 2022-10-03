@@ -93,7 +93,7 @@
   }
 
   .footer_bottom {
-    padding-right: 107px;
+    padding-right: 70px;
   }
 }
 
@@ -177,10 +177,6 @@
     height: auto;
   }
 
-  /*  .contact-form_checkbox + .contact-form_label__checkbox::before {
-    width: 40px;
-  } */
-
   .footer_wrapper {
     flex-wrap: wrap;
     margin: 0 40px 57px;
@@ -220,5 +216,6 @@
     row-gap: 10px;
     font-size: 14px;
     line-height: 17px;
+    padding-right: 0;
   }
 }

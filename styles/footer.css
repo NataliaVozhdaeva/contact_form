@@ -79,6 +79,18 @@
   line-height: 24px;
 }
 
+.presentation {
+  position: relative;
+}
+
+.presentation::after {
+  position: absolute;
+  content: url('../img/icons/arrow-up.svg');
+  bottom: 0;
+  right: -17px;
+}
+
+.sub-nav_item:hover,
 .sub-nav_link:hover,
 .link_privacypolicy:hover {
   color: #303030;
@@ -94,10 +106,14 @@
 
 .footer_bottom {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
   margin: auto;
   padding-bottom: 20px;
   color: #fff;
   font-weight: 600;
   max-width: 1200px;
+  padding-right: 70px;
+  font-size: 14px;
+  line-height: 17px;
 }
